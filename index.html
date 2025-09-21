@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Janet Maria Saji | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    :root {
+      --bg: #0f1724;
+      --card: #0b1220;
+      --muted: #9aa4b2;
+      --accent: #7dd3fc;
+      --glass: rgba(255, 255, 255, 0.03);
+      font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: linear-gradient(180deg, #071028 0%, #071425 100%);
+      color: #e6eef6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.5;
+      padding: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .container {
+      width: 100%;
+      max-width: 900px;
+      background: var(--card);
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
+    }
+    .row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .hero {
+      flex: 1 1 320px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 0.3px;
+    }
+    p.lead {
+      margin: 10px 0 18px;
+      color: var(--muted);
+    }
+    .buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 10px 14px;
+      border-radius: 8px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.05);
+      transform: translateY(-2px);
+    }
+    .btn.secondary {
+      color: var(--muted);
+      border-style: dashed;
+    }
+    .card {
+      background: var(--glass);
+      padding: 16px;
+      border-radius: 10px;
+      min-width: 220px;
+    }
+    .skills {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .skill {
+      background: rgba(255, 255, 255, 0.03);
+      padding: 6px 8px;
+      border-radius: 6px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .projects {
+      margin-top: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .project {
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    a.link {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    a.link:hover {
+      color: #b3e7ff;
+    }
+    footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+    @media (max-width: 640px) {
+      body {
+        padding: 18px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <div class="row">
+      <div class="hero">
+        <h1>Janet Maria Saji</h1>
+        <div style="color:var(--muted);margin-top:6px;font-weight:600">B.Tech Computer Science Student</div>
+        <p class="lead">Second-year B.Tech Computer Science student with a passion for technology and problem-solving. I am eager to explore various fields in computer science, from software development to AI and cybersecurity. I enjoy working on projects that challenge my skills and expand my knowledge.</p>
+        <div class="buttons">
+          <a class="btn" href="https://github.com/Janetmaria" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/janet-maria-saji-14a98a330/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a class="btn secondary" href="mailto:janetsaji1652@gmail.com"><i class="fa fa-envelope"></i> Email</a>
+          <a class="btn" href="Janet Resume.pdf" download="Janet Resume.pdf" title="Download Resume"><i class="fa fa-file-alt"></i> Resume</a>
+        </div>
+        <div style="margin-top:16px" class="card">
+          <strong>Top Skills</strong>
+          <div class="skills" style="margin-top:8px">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">C</div>
+            <div class="skill">Java</div>
+            <div class="skill">Python</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">MySql</div>
+            <div class="skill">Figma</div>
+          </div>
+        </div>
+      </div>
+      <div style="flex:0 1 300px">
+        <div class="card">
+          <strong>Experience & Projects</strong>
+          <div class="projects">
+            <div class="project">
+              <div>
+                <div style="font-weight:600">Personalized Health Status Tracker - Medisst</div>
+                <div style="color:var(--muted);font-size:13px">Developed a web platform to track medications and appointments.</div>
+              </div>
+            </div>
+            <div class="project">
+              <div>
+                <div style="font-weight:600">NSS Volunteer</div>
+                <div style="color:var(--muted);font-size:13px">Engaged in community service initiatives and leadership programs.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:12px" class="card">
+          <strong>Education & Certifications</strong>
+          <div style="color:var(--muted);margin-top:6px;font-size:14px">
+            B.Tech in Computer Science and Engineering <br/>
+            Mar Athanasius College of Engineering, Kothamangalam <br/>
+            CGPA: 8.82 <br/>
+            Certification: Programming in Java NPTEL (IIT Kharagpur) 
+          </div>
+        </div>
+        <div style="margin-top:12px;text-align:center" class="card">
+          <strong>Contact</strong>
+          <div style="color:var(--muted);margin-top:8px;font-size:13px">
+            <div><a class="link" href="mailto:janetsaji1652@gmail.com">janetsaji1652@gmail.com</a></div>
+            <div style="margin-top:6px">7510237175</div>
+            <div style="margin-top:6px"><a class="link" href="https://linkedin.com/in/janet-maria-saji-14a98a330/" target="_blank">linkedin.com/in/janet-maria-saji-14a98a330/</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      Built with ♥ • Inspired by minimalism • You can further customize and deploy to GitHub Pages
+    </footer>
+  </div>
+</body>
+</html>
